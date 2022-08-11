@@ -5,8 +5,11 @@ import { Component } from '@angular/core';
   //selector: '.app-root',
   //selector: '#app-root',
   selector: 'app',
-  //templateUrl: './app.component.html',
-  template: `
+  templateUrl: './app.component.html',
+
+  //template:`<product></product>`,
+
+ /* template: `
       <h1>App Component</h1>
     <h2>{{gettitle()}}</h2>
     <p>
@@ -14,8 +17,17 @@ import { Component } from '@angular/core';
         {{todoItem.action}}
 
     </p>
-  `,
-  styleUrls: ['./app.component.css']
+  `,*/
+
+  //styleUrls: ['./app.component.css']
+  styles:[
+    `
+      p{
+        color:red;
+      }
+    `
+  ]
+  
 })
 export class AppComponent {
    title = 'todo app';
